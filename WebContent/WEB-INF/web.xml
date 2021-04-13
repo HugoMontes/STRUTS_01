@@ -7,7 +7,7 @@
 	<display-name>STRUTS_01</display-name>
 
 	<welcome-file-list>
-		<welcome-file>/jsp/index.jsp</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 
 	<filter>
