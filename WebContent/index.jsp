@@ -15,5 +15,13 @@
 	</s:url>
 	<!-- Visualizar la url -->
 	<p><a href="${helloLink}">Hola Parametros</a></p>
+	
+	<p>Ingrese su saludo personalizado.</p>
+	<s:form action="hello">
+	  <s:textfield name="mensaje" label="Su mensaje" />
+	  <s:submit value="Saludar" />
+	</s:form>
+	
+	<p><a href="registro.jsp">Formulario de registro</a></p>
 </body>
 </html>
