@@ -6,7 +6,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Curso Struts2</h1>
-	<p><a href="<s:url action='hello'/>">Hola Mundo</a></p>
+	<h2><s:property value = "mensaje"/></h2>
 </body>
 </html>
