@@ -22,6 +22,8 @@
 	  <s:submit value="Saludar" />
 	</s:form>
 	
-	<p><a href="registro.jsp">Formulario de registro</a></p>
+	<!-- p><a href="registro.jsp">Formulario de registro</a></p -->
+	<s:url action="registroInput" var="registroInputLink" />
+	<p><s:a href="%{registroInputLink}">Formulario de registro</s:a></p>
 </body>
 </html>

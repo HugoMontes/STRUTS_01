@@ -8,12 +8,13 @@
 </head>
 <body>
 	<h3>Complete el siguiente formulario para su registro.</h3>
+	<!-- Mustra en un solo bloque los mensajes de validacion -->
     <s:fielderror/>
     <s:form action="registrar">
-      <s:textfield name="personaBean.nombre" label="Nombre" errorPosition="bottom"/>
-      <s:textfield name="personaBean.apellido" label="Apellido" errorPosition="bottom"/>
-      <s:textfield name="personaBean.email"  label ="Email" errorPosition="bottom"/>
-      <s:textfield name="personaBean.edad"  label="Edad" errorPosition="bottom"/>
+      <s:textfield key="personaBean.nombre" errorPosition="bottom"/>
+      <s:textfield key="personaBean.apellido" errorPosition="bottom"/>
+      <s:textfield key="personaBean.email" errorPosition="bottom"/>
+      <s:textfield key="personaBean.edad" errorPosition="bottom"/>
       <s:submit value="Registrar"/>
     </s:form>
 </body>
