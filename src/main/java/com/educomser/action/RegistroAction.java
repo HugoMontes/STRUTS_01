@@ -13,8 +13,23 @@ public class RegistroAction extends ActionSupport {
 		// Retorna constante heredada
 		return SUCCESS;
 	}
-	// Metodos Getter y Setter
+	
+	// Metodo de validacion
+	public void validate(){
+	    if (personaBean.getNombre().length() == 0) {
+	        addFieldError("personaBean.nombre", "Nombre es obligatorio.");
+	    }
 
+	    if (personaBean.getEmail().length() == 0) {
+	        addFieldError("personaBean.email", "Email es obligatorio.");
+	    }
+
+	    if (personaBean.getEdad() < 18) {
+	        addFieldError("personaBean.edad", "Ingresar una edad mayor a 18 años");
+	    }
+	}
+	
+	// Metodos Getter y Setter
 	public Persona getPersonaBean() {
 		return personaBean;
 	}
