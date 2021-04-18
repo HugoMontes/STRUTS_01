@@ -6,7 +6,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Curso Struts2</h1>
+	<h1><s:text name="bienvenido" /></h1>
 	<p><a href="<s:url action='hello'/>">Hola Mundo</a></p>
 	
 	<!-- Crear una url con paso de parametro -->
