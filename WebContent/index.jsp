@@ -25,5 +25,8 @@
 	<!-- p><a href="registro.jsp">Formulario de registro</a></p -->
 	<s:url action="registroInput" var="registroInputLink" />
 	<p><s:a href="%{registroInputLink}">Formulario de registro</s:a></p>
+	
+	<s:url action="registroEmpleadoInput" var="registroEmpleadoInputLink" />
+	<p><s:a href="%{registroEmpleadoInputLink}">Registro empleado</s:a></p>
 </body>
 </html>

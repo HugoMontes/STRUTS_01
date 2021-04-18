@@ -32,5 +32,17 @@
 				method="input" >
 		    <result name="input">/registro.jsp</result>
 		</action>
+		
+		<action name="registrarEmpleado" 
+      			class="com.educomser.action.EmpleadoRegistroAction" 
+      			method="execute">
+		    <result name="success">/empleadoSalida.jsp</result>
+		</action>
+		
+		<action name="registroEmpleadoInput" 
+				class="com.educomser.action.EmpleadoRegistroAction" 
+				method="input" >
+		    <result name="input">/empleadoRegistro.jsp</result>
+		</action>
     </package>
 </struts>
