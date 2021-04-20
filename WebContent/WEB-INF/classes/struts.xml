@@ -17,6 +17,8 @@
         <action name = "hello"
          		class = "com.educomser.action.HolaMundoAction" 
          		method = "execute">
+         	<interceptor-ref name = "params"/>
+         	<interceptor-ref name = "timer" />
          	<result name = "success">/HolaMundo.jsp</result>
       	</action>
       	

@@ -15,13 +15,12 @@
     <p>Fecha Nacimiento: <s:date name="empleadoBean.fechaNacimiento" format="dd/MM/yyyy"/></p>
     <p>Pais: <s:property value="empleadoBean.pais" /></p>
     <p>Estado Civil: <s:property value="empleadoBean.estadoCivil" /></p>
-    <p>Pasatiempos: 
-   		<ul>
+    <p>Pasatiempos:</p> 
+   	<ul>
     	<s:iterator value="empleadoBean.pasatiempos" var="pasatiempo">
     		<li><s:property value="pasatiempo"/></li>
     	</s:iterator>
-    	</ul>
-    </p>
+    </ul>    
     <s:if test="empleadoBean.pais eq 'Bolivia'">
     	<p>Es de nacionalidad boiviana</p>
     </s:if>
