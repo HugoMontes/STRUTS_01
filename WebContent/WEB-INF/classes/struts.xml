@@ -9,8 +9,13 @@
 	<constant name="struts.custom.i18n.resources" value="global" />
 
     <package name="default" namespace="/" extends="struts-default">
+    	<!-- Registrar el interceptor -->
+    	<interceptors>
+        	<interceptor name = "holainterceptor"
+            			 class = "com.educomser.interceptor.HolaInterceptor" />
+      	</interceptors>
     
-    	<action name="index">
+      	<action name="index">
             <result>/index.jsp</result>
         </action>
         
@@ -25,6 +30,8 @@
       	<action name="registrar" 
       			class="com.educomser.action.RegistroAction" 
       			method="execute">
+      		<interceptor-ref name = "params"/>
+      		<interceptor-ref name = "holainterceptor"/>
 		    <result name="success">/gracias.jsp</result>
 		    <result name="input">/registro.jsp</result>
 		</action>
