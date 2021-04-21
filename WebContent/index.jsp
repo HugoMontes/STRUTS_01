@@ -28,5 +28,9 @@
 	
 	<s:url action="registroEmpleadoInput" var="registroEmpleadoInputLink" />
 	<p><s:a href="%{registroEmpleadoInputLink}">Registro empleado</s:a></p>
+	
+	<a href="loginform">Login</a>|
+	<a href="logout">Logout</a>|
+	<a href="perfil">Perfil</a>  
 </body>
 </html>

@@ -53,5 +53,27 @@
 				method="input" >
 		    <result name="input">/empleadoRegistro.jsp</result>
 		</action>
+		
+		<!-- LOGIN Y SESION -->
+		<action name="loginform">  
+			<result>login.jsp</result>  
+		</action>  
+		  
+		<action name="login" class="com.educomser.action.LoginAction" 
+				method="execute">  
+			<result name="success">/login-success.jsp</result>  
+			<result name="login">/login-error.jsp</result>  
+		</action>  
+		  
+		<action name="logout" class="com.educomser.action.LoginAction" 
+				method="logout">  
+			<result name="success">/logout-success.jsp</result>  
+		</action>  
+		   
+		<action name="perfil" class="com.educomser.action.PerfilAction" 
+				method="execute">  
+			<result name="success">/perfil-success.jsp</result>  
+			<result name="login">/perfil-error.jsp</result>  
+		</action>  
     </package>
 </struts>
