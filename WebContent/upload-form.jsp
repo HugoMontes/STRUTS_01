@@ -6,9 +6,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="doUpload" method="post" enctype="multipart/form-data">
+	<s:form action="doUpload" method="post" enctype="multipart/form-data">
 		<s:file name="upload" label="Archivo" />
 		<s:submit value="Subir"/>
-	</form>
+	</s:form>
 </body>
 </html>

@@ -91,5 +91,15 @@
 			<result name="success">/upload-success.jsp</result>
 			<result name="error">/upload-error.jsp</result>
 		</action>
+		
+		<!-- ENVIAR EMAIL -->
+		<action name="mailform">  
+			<result>/mail-form.jsp</result>  
+		</action>
+		
+		<action name="doSendMail" class="com.educomser.action.EmailerAction">
+			<result name="success">/mail-success.jsp</result>
+			<result name="error">/mail-error.jsp</result>
+		</action>
     </package>
 </struts>

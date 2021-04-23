@@ -34,5 +34,7 @@
 	<a href="perfil">Perfil</a>  
 	
 	<p><a href="fileform">Formulario subir archivo</a></p>
+	
+	<p><a href="mailform">Formulario mail</a></p>
 </body>
 </html>
