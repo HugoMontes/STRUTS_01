@@ -80,6 +80,16 @@
 				method="execute">  
 			<result name="success">/perfil-success.jsp</result>  
 			<result name="login">/perfil-error.jsp</result>  
-		</action>  
+		</action>
+		
+		<!-- SUBIR ARCHIVO -->
+		<action name="fileform">  
+			<result>/upload-form.jsp</result>  
+		</action>
+		
+		<action name="doUpload" class="com.educomser.action.UploadAction">
+			<result name="success">/upload-success.jsp</result>
+			<result name="error">/upload-error.jsp</result>
+		</action>
     </package>
 </struts>

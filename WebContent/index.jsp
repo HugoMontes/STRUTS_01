@@ -32,5 +32,7 @@
 	<a href="loginform">Login</a>|
 	<a href="logout">Logout</a>|
 	<a href="perfil">Perfil</a>  
+	
+	<p><a href="fileform">Formulario subir archivo</a></p>
 </body>
 </html>
