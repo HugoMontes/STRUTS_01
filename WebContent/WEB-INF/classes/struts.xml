@@ -101,5 +101,11 @@
 			<result name="success">/mail-success.jsp</result>
 			<result name="error">/mail-error.jsp</result>
 		</action>
+		
+		<!-- MODULO USUARIO -->
+		<action name="usuario-listar"
+				class="com.educomser.action.UsuarioAction"> 
+			<result name="success">/usuario-lista.jsp</result>  
+		</action>
     </package>
 </struts>

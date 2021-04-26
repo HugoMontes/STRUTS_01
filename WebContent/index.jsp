@@ -36,5 +36,7 @@
 	<p><a href="fileform">Formulario subir archivo</a></p>
 	
 	<p><a href="mailform">Formulario mail</a></p>
+	
+	<p><a href="usuario-listar">Usuarios</a></p>
 </body>
 </html>
